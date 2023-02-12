@@ -1,0 +1,13 @@
+body{
+    background-color: darkcyan;
+    margin: 0;
+}
+
+.input_fecha{
+    width: 50px;
+    border-radius: 5px;
+}
+
+.vertical_center{
+    height: 500px;
+}
