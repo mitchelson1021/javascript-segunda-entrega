@@ -4,10 +4,11 @@ body{
 }
 
 .input_fecha{
-    width: 50px;
+    width: 60px;
     border-radius: 5px;
 }
 
 .vertical_center{
-    height: 500px;
+    height: 300px;
+    /* border: 1px solid black; */
 }
