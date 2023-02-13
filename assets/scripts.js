@@ -1,11 +1,10 @@
-let dia = [];
-let mes = [];
-let año = [];
+
+
 
 let fechaDeNacimiento = ["dia", "mes", "año"];
 
 
-for (let i = 0; i < fechaDeNacimiento.length; i++){
+/* for (let i = 0; i < fechaDeNacimiento.length; i++){
     let fecha = parseInt(prompt("ingresa tu " + fechaDeNacimiento[i] + " de Nacimiento"));
         if (i === 0){
             dia = fecha;
@@ -16,70 +15,80 @@ for (let i = 0; i < fechaDeNacimiento.length; i++){
         } else {
             console.log("Alguno de los datos es incorrecto");
         }
-}
+} */
 
-console.log("Tu fecha de nacimiento es " + dia + "/" + mes + "/" + año)
+
+
+
+//console.log("Tu fecha de nacimiento es " + dia + "/" + mes + "/" + año)
 
 function zodiaco () {
+    let dia = document.getElementById("dia");
+    let mes = document.getElementById("mes");
+    let año = document.getElementById("anio");
+    let mensaje = document.getElementById("mansaje");
+    console.log("Tu fecha de nacimiento es " + dia.value + "/" + mes.value + "/" + año.value)
+
+
         //Aries
-    if (dia >= 21 && dia <= 31 &&  mes == "3") {
+    if (dia.value >= 21 && dia.value <= 31 &&  mes.value == "3") {
         console.log("Tu sigo Zodiacal es Aries");
-    } else if ( dia >= 1 && dia <= 19 &&  mes == "4" ) {
+    } else if ( dia.value >= 1 && dia.value <= 19 &&  mes.value == "4" ) {
         console.log("Tu sigo Zodiacal es Aries");
         //Taurus
-    } else if ( dia >= 20 && dia <= 30 &&  mes == "4" ) {
+    } else if ( dia.value >= 20 && dia.value <= 30 &&  mes.value == "4" ) {
         console.log("Tu sigo Zodiacal es Taurus");
-    } else if ( dia >= 1 && dia <= 20 &&  mes == "5" ) {
+    } else if ( dia.value >= 1 && dia.value <= 20 &&  mes.value == "5" ) {
     console.log("Tu sigo Zodiacal es Taurus");
         //Gémini
-    } else if ( dia >= 21 && dia <= 31 &&  mes == "5" ) {
+    } else if ( dia.value >= 21 && dia.value <= 31 &&  mes.value == "5" ) {
     console.log("Tu sigo Zodiacal es Gémini");
-    } else if ( dia >= 1 && dia <= 20 &&  mes == "6" ) {
+    } else if ( dia.value >= 1 && dia.value <= 20 &&  mes.value == "6" ) {
     console.log("Tu sigo Zodiacal es Gémini");
         //Cancer
-    } else if ( dia >= 21 && dia <= 30 &&  mes == "6" ) {
+    } else if ( dia.value >= 21 && dia.value <= 30 &&  mes.value == "6" ) {
     console.log("Tu sigo Zodiacal es Cáncer");
-    } else if ( dia >= 1 && dia <= 20 &&  mes == "7" ) {
+    } else if ( dia.value >= 1 && dia.value <= 20 &&  mes.value == "7" ) {
     console.log("Tu sigo Zodiacal es Cáncer");
     //Leo
-    } else if ( dia >= 21 && dia <= 31 &&  mes == "7" ) {
+    } else if ( dia.value >= 21 && dia.value <= 31 &&  mes.value == "7" ) {
     console.log("Tu sigo Zodiacal es Leo");
-    } else if ( dia >= 1 && dia <= 22 &&  mes == "8" ) {
+    } else if ( dia.value >= 1 && dia.value <= 22 &&  mes.value == "8" ) {
     console.log("Tu sigo Zodiacal es Leo");
     //Virgo
-    } else if ( dia >= 23 && dia <= 31 &&  mes == "8" ) {
+    } else if ( dia.value >= 23 && dia.value <= 31 &&  mes.value == "8" ) {
     console.log("Tu sigo Zodiacal es Virgo");
-    } else if ( dia >= 1 && dia <= 23 &&  mes == "9" ) {
+    } else if ( dia.value >= 1 && dia.value <= 23 &&  mes.value == "9" ) {
     console.log("Tu sigo Zodiacal es Virgo");
     //Libra
-    } else if ( dia >= 24 && dia <= 30 &&  mes == "9" ) {
+    } else if ( dia.value >= 24 && dia.value <= 30 &&  mes.value == "9" ) {
     console.log("Tu sigo Zodiacal es Libra");
-    } else if ( dia >= 1 && dia <= 23 &&  mes == "10" ) {
+    } else if ( dia.value >= 1 && dia.value <= 23 &&  mes.value == "10" ) {
     console.log("Tu sigo Zodiacal es Libra");
     //Escorpio
-    } else if ( dia >= 24 && dia <= 31 &&  mes == "10" ) {
+    } else if ( dia.value >= 24 && dia.value <= 31 &&  mes.value == "10" ) {
     console.log("Tu sigo Zodiacal es Escorpio");
-    } else if ( dia >= 1 && dia <= 22 &&  mes == "11" ) {
+    } else if ( dia.value >= 1 && dia.value <= 22 &&  mes.value == "11" ) {
     console.log("Tu sigo Zodiacal es Escorpio");
     //Sagitarius
-    } else if ( dia >= 23 && dia <= 30 &&  mes == "11" ) {
+    } else if ( dia.value >= 23 && dia.value <= 30 &&  mes.value == "11" ) {
     console.log("Tu sigo Zodiacal es Sagitarius");
-    } else if ( dia >= 1 && dia <= 22 &&  mes == "12" ) {
+    } else if ( dia.value >= 1 && dia.value <= 22 &&  mes.value == "12" ) {
     console.log("Tu sigo Zodiacal es Sagitarius");
     //Capricornus
-    } else if ( dia >= 23 && dia <= 31 &&  mes == "12" ) {
+    } else if ( dia.value >= 23 && dia.value <= 31 &&  mes.value == "12" ) {
     console.log("Tu sigo Zodiacal es Capricornus");
-    } else if ( dia >= 1 && dia <= 22 &&  mes == "1" ) {
+    } else if ( dia.value >= 1 && dia.value <= 22 &&  mes.value == "1" ) {
     console.log("Tu sigo Zodiacal es Capricornus");
     //Aquarius
-    } else if ( dia >= 23 && dia <= 31 &&  mes == "1" ) {
+    } else if ( dia.value >= 23 && dia.value <= 31 &&  mes.value == "1" ) {
     console.log("Tu sigo Zodiacal es Aquarius");
-    } else if ( dia >= 1 && dia <= 20 &&  mes == "2" ) {
+    } else if ( dia.value >= 1 && dia.value <= 20 &&  mes.value == "2" ) {
     console.log("Tu sigo Zodiacal es Acuarius");
     //Piscis
-    } else if ( dia >= 21 && dia <= 29 &&  mes == "2" ) {
+    } else if ( dia.value >= 21 && dia.value <= 29 &&  mes.value == "2" ) {
     console.log("Tu sigo Zodiacal es Piscis");
-    } else if ( dia >= 1 && dia <= 20 &&  mes == "3" ) {
+    } else if ( dia.value >= 1 && dia.value <= 20 &&  mes.value == "3" ) {
     console.log("Tu sigo Zodiacal es Piscis");
     } 
     else {
